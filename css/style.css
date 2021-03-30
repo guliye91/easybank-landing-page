@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+  background-color: hsl(0, 0%, 98%);
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+}
+/* general styling */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+  padding: 1rem 0;
+}
+nav .btn {
+  border: 0;
+  border-radius: 2rem;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  padding: 1rem 3.5rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+/* showcase section */
+.showcase {
+  overflow-x: hidden;
+  padding: 3rem 0;
+}
+.showcase h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 1rem 0;
+}
+.showcase p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+.showcase .img-container {
+  transform: translateX(190px);
+}
+.showcase img {
+  width: 50rem;
+}
+.showcase .btn {
+  border: 0;
+  border-radius: 2rem;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  padding: 1rem 3.5rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+/* services section */
+.services {
+  background-color: hsl(220, 16%, 96%);
+  padding: 13rem 0 4rem;
+  margin-top: -20rem;
+}
+.services h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.services h3 {
+  font-weight: bold;
+  padding: 2rem 0;
+}
+.services p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+/* articles section */
+.articles {
+  padding: 8rem 0 2rem;
+}
+.articles h2 {
+  padding: 0 0 3rem;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.articles .cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.articles .cards-container .carda {
+  background-color: #fff;
+}
+.articles .image-container {
+  width: 25rem;
+  height: 25rem;
+}
+.articles .image-container img {
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+.articles .cards-container .card-contents {
+  padding: 0 2rem 2rem;
+}
+.articles .cards-container .card-contents .small {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+.articles .cards-container .card-contents h3 {
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.articles .cards-container .card-contents p {
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+/* footer section */
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  color: hsl(0, 0%, 100%);
+}
+.footer a {
+  color: hsl(0, 0%, 100%);
+}
+.footer .icons {
+  padding: 7rem 0 0;
+}
+.footer .icons img {
+  margin-right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.footer li {
+  padding-bottom: 2rem;
+  opacity: 0.6;
+}
+.footer button {
+  border: 0;
+  border-radius: 2rem;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  padding: 1rem 3.5rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+.footer p {
+  padding: 6rem 0 0;
+  margin-left: -2rem;
+  opacity: 0.6;
+}
