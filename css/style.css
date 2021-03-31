@@ -241,6 +241,9 @@ nav .btn {
 }
 @media screen and (max-width: 768px) {
   /* nav section */
+  nav {
+    padding: 2rem 2rem;
+  }
   #navbarSupportedContent > button {
     display: none;
   }
