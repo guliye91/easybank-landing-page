@@ -20,6 +20,31 @@ a {
 nav ul {
   padding: 1rem 0;
 }
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  padding: 0 2rem;
+  color: #000;
+  opacity: 0.6;
+  position: relative;
+}
+/* nav ul li {
+  position: relative;
+} */
+nav ul a::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -3px;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+nav ul a:hover::before {
+  transform: scaleX(1);
+}
 nav .btn {
   border: 0;
   border-radius: 2rem;
@@ -32,6 +57,10 @@ nav .btn {
 .showcase {
   overflow-x: hidden;
   padding: 3rem 0;
+  background-image: url("../images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 500px 10px;
+  background-size: cover;
 }
 .showcase h2 {
   font-weight: 700;
@@ -202,11 +231,21 @@ nav .btn {
     gap: 4rem 2rem;
   }
 }
-
+@media screen and (max-width: 992px) {
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 0.5rem 0;
+  }
+  nav ul a:hover::before {
+    transform: scaleX(0);
+  }
+}
 @media screen and (max-width: 768px) {
   /* nav section */
   #navbarSupportedContent > button {
     display: none;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 0.5rem 0;
   }
   /* footer section */
   .footer {
@@ -237,6 +276,18 @@ nav .btn {
 @media screen and (max-width: 576px) {
   body {
     text-align: center;
+  }
+  /* showcase section */
+  .showcase {
+    overflow-x: hidden;
+    padding: 3rem 0;
+    background-image: url("../images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 10px -10px;
+    background-size: cover;
+  }
+  .showcase p {
+    padding: 0 1rem;
   }
   /* services section */
   .services {
